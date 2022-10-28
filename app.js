@@ -16,7 +16,7 @@ app.use(session({
   secret: 'long_string_for_session_sercure',
   resave: true,
   saveUninitialized: true,
-  cookie: {maxAge:6000}
+  cookie: {maxAge:9000000000000}
 }))
 
 // view engine setup

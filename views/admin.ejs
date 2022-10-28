@@ -5,11 +5,13 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome <%= name %> </p>
-    <%- select_box %>
-    <%- table_string %>
-    <a href="http://localhost:3000/logout">Logout</a>
+    <h1 class="h1p"><%= title %></h1>
+    <p class="h1p">Welcome <%= name %> </p>
+    <div class="formtable1">
+        <%- select_box %>
+        <%- table_string %>
+    </div>
+    <a class="logout" href="http://localhost:3000/logout" >Logout</a>
   </body>
 </html>
 

@@ -13,7 +13,7 @@ router.get('/', async function(req, res, next) {
     let username = session.user_id;
     let table = await display_product(shop_id,session);
     let box_string = await gen_box();
-    res.render('admin', {title: 'welcome to admin', name: username, select_box: box_string, table_string: table})
+    res.render('admin', {title: 'Welcome To Admin', name: username, select_box: box_string, table_string: table})
   }
   else{
     res.redirect('/login');
@@ -25,7 +25,7 @@ router.post('/select_box', async function(req, res, next) {
   username = req.session.user_id;
   let table = await display_product(shop_id,session);
   let box_string = await gen_box(shop_id);
-  res.render('admin', { title: 'welcome to admin', 
+  res.render('admin', { title: 'Welcome To Admin', 
                         name: username, 
                         select_box: box_string, 
                         table_string: table});
